@@ -8,4 +8,4 @@ CSS
 
 SITE LINK
 -
-[insert link here lol]
+https://github.com/ParadoxicXenos/Portofolio
