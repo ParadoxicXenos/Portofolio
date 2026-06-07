@@ -1,0 +1,447 @@
+@media (min-width: 700px) {
+body {
+    background-image: url("Resources/Background.png");
+    background-size: fit;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0em;
+    padding-bottom: 0.1em;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    height: 5em;
+    width: auto;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 2em;
+    margin-left: auto; 
+}
+
+.nav-button:hover {
+    transform: scale(1.02)
+}
+
+.nav-button:active {
+    transform: scale(0.9);
+}
+.hero-button:hover {
+    transform: scale(1.02)
+}
+
+.hero-button:active {
+    transform: scale(0.9);
+}
+
+.nav-button {
+    display: inline-flex;
+    border: none;
+    background: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-decoration: none;
+    font-family: "Intel One Mono";
+    font-size: clamp(10px,3vw,27px);
+    font-style: normal;
+    font-weight: 400;
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Hero {
+    position: absolute;
+    top: 50%;
+    padding-left: 1em;
+    width: 80%;
+}
+
+
+.Shape {
+    width: 100%;
+    height: 20%;
+    display: block;
+}
+
+
+.hero-button {
+    display: inline-flex;
+    position: absolute;
+    top: 67%;
+    left: 55%;
+    padding: 12px 20px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    width: 40%;
+    height: 20%;
+    text-decoration: none;
+    font-family: "Intel One Mono";
+    font-size: clamp(10px,3vw,27px);
+    font-style: normal;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.hero-text-container {
+    position: absolute;
+    top:10%;
+    left: 8%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+    margin: 0;
+
+}
+h1{
+    padding: 0;
+    margin: 0;
+    font-family: "Share Tech Mono";
+    font-size:7vw;
+    color: white;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+    font-family: "Intel One Mono";
+    font-size: 3vw;
+    font-style: italic;
+    color: white;
+}
+h3{
+    padding: 0;
+    margin: 0;
+    font-family: "Share Tech Mono";
+    font-size: 2vw;
+    font-style:normal;
+    color: white;
+}
+
+.blurb{
+    margin-top: auto;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    margin-left: 0.5em;
+}
+h4{
+    font-family: "Share Tech Mono";
+    color: white;
+    font-size: 4vw;
+}
+.carousel{
+    position: absolute;
+    left: 5%;
+    bottom: 5vh;
+    top: 20vh;
+    margin: 100px auto;
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    overflow: hidden;
+
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+}
+
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.groups{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    animation: sbinlada 10s infinite linear;
+    padding-right: 2em;
+}
+.carousel:hover .groups{
+    animation-play-state: paused;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: auto;
+    width: 45vh;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.25);
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
+}
+.card:hover{
+    background-color: rgba(115, 0, 187, 0.25);
+    transform: scale(1.02)
+}
+.projpic{
+    width: 100%;
+    border-radius: 20px;
+}
+.project-button{
+    display: inline-flex;
+    border: none;
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    text-decoration: none;
+    height: 15%;
+    font-family: "Intel One Mono";
+    font-size: clamp(10px,3vw,27px);
+    font-style: normal;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+.project-button:hover{
+    transform: scale(1.02);
+}
+.project-button:active{
+    transform: scale(0.98);
+}
+@keyframes sbinlada {
+    from {translate: 0;}
+    to {translate: -100%;}    
+}
+}
+@media (max-width: 699px) {
+body {
+    background-image: url("Resources/Background.png");
+    background-size: fit;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0em;
+    padding-bottom: 0.1em;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    height: 3em;
+    width: auto;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 2em;
+    margin-left: auto; 
+}
+
+.nav-button {
+    display: inline-flex;
+    border: none;
+    background: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-decoration: none;
+    font-family: "Intel One Mono";
+    font-size: clamp(10px,3vw,27px);
+    font-style: normal;
+    font-weight: 400;
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Hero {
+    position: absolute;
+    top: 50%;
+    padding-left: 1em;
+    width: 80%;
+}
+
+
+.Shape {
+    width: 100%;
+    height: 20%;
+    display: block;
+}
+
+
+.hero-button {
+    display: inline-flex;
+    position: absolute;
+    top: 67%;
+    left: 58%;
+    padding: 0;
+    border: none;
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    width: 40%;
+    height: 32%;
+    text-decoration: none;
+    font-family: "Intel One Mono";
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.hero-text-container {
+    position: absolute;
+    top:10%;
+    left: 12%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+    margin: 0;
+
+}
+h1{
+    padding: 0;
+    margin: 0;
+    font-family: "Share Tech Mono";
+    font-size:7vw;
+    color: white;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+    font-family: "Intel One Mono";
+    font-size: 3vw;
+    font-style: italic;
+    color: white;
+}
+.nav-button:hover {
+    transform: scale(1.02)
+}
+
+.nav-button:active {
+    transform: scale(0.9);
+}
+.hero-button:hover {
+    transform: scale(1.02)
+}
+
+.hero-button:active {
+    transform: scale(0.9);
+}
+h4{
+    font-family: "Share Tech Mono";
+    color: white;
+    font-size: 3vw;
+}
+.blurb{
+    margin-top: auto;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    margin-left: 0.5em;
+}
+h3{
+    padding: 0;
+    margin: 0;
+    font-family: "Share Tech Mono";
+    font-style:normal;
+    color: white;
+}
+.carousel{
+    position: absolute;
+    left: 5%;
+    bottom: 5vh;
+    top: 20vh;
+    margin: 100px auto;
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    overflow: hidden;
+
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+}
+
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.groups{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    animation: sbinlada 10s infinite linear;
+    padding-right: 2em;
+}
+.carousel:hover .groups{
+    animation-play-state: paused;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: auto;
+    width: 45vh;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.25);
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
+}
+.card:hover{
+    background-color: rgba(115, 0, 187, 0.25);
+    transform: scale(1.02)
+}
+
+.projpic{
+    width: 100%;
+    border-radius: 20px;
+}
+@keyframes sbinlada {
+    from {translate: 0;}
+    to {translate: -100%;}    
+}
+
+}
