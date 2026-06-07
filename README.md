@@ -7,5 +7,4 @@ HTML
 CSS
 
 SITE LINK
--
-https://github.com/ParadoxicXenos/Portofolio
+https://paradoxicxenos.github.io/Portofolio/index.html
