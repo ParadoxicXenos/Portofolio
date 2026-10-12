@@ -5,6 +5,3 @@ It features a design that is heavily inspired by Gen-X Softclub.
 Built with:
 HTML
 CSS
-
-SITE LINK
-https://paradoxicxenos.github.io/Portofolio/index.html
